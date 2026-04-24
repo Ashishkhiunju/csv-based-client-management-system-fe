@@ -10,8 +10,8 @@ function Navbar() {
     <nav>
       <strong>My App</strong>
 
-      <Link to="/">Home</Link>
-      <Link to="/readme">Readme</Link>
+      {/* <Link to="/">Home</Link>
+      <Link to="/readme">Readme</Link> */}
 
       <div style={{ marginLeft: "auto", display: "flex", gap: "10px", alignItems: "center" }}>
         {user && (

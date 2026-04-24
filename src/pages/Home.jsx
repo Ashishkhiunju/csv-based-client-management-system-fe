@@ -28,7 +28,7 @@ function Home() {
   };
 
   const handleDirectLogin = async () => {
-        window.open("http://127.0.0.1:8000/home", "_blank");
+        window.open("http://127.0.0.1:8000", "_blank");
 };
 
   useEffect(() => {
@@ -40,7 +40,7 @@ function Home() {
     <div style={{ padding: "30px" }}>
         <div style={{ textAlign: "center", margin: "20px 0" }}>
             <button onClick={handleDirectLogin} style={styles.bigButton}>
-                Login Directly to Laravel Dashboard
+                Login to Laravel Dashboard
             </button>
         </div>
       <h2>Client Management</h2>
