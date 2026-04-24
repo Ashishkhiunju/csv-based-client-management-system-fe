@@ -15,7 +15,7 @@ function Home() {
 
   const fetchClients = async (page = 1) => {
     const res = await fetch(
-      `${baseUrl}/clients?page=${page}`,
+      `${baseUrl}/api/clients?page=${page}`,
       {
         headers: {
           Authorization: `Bearer ${token}`, // 👈 important
@@ -26,9 +26,10 @@ function Home() {
     const result = await res.json();
     dispatch(setClients(result));
   };
+ // 👈 using config
 
   const handleDirectLogin = async () => {
-        window.open("http://127.0.0.1:8000", "_blank");
+        window.open(`${baseUrl}`, "_blank");
 };
 
   useEffect(() => {

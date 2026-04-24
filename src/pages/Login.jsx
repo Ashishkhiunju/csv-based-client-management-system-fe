@@ -13,7 +13,7 @@ function Login() {
 
   const handleLogin = async () => {
     setLoading(true); 
-    const res = await fetch(`${baseUrl}/login`, {
+    const res = await fetch(`${baseUrl}/api/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -34,7 +34,7 @@ function Login() {
   };
 
   const handleReadmeLink = () =>{
-     window.open("http://127.0.0.1:8000/readme", "_blank");
+     window.open(`${baseUrl}/readme`, "_blank");
   }
 
   return (
